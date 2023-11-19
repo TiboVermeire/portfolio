@@ -1,88 +1,106 @@
-body{
- background-color: #F6EDC5 ;
-}
-h1{
-    font-size: 48px;
+body {
+    background-color: #F6EDC5;
+    margin: 0;
 }
 
-h2{
-    font-size: 32px;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+header {
+    position: fixed; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 44px;
 }
 
-h3{
-    font-size: 24px;
-}
-
-p{
-    font-size: 16px;
-}
-header{
+.logo {
+    width: 80px;
+    position: fixed; 
+    top: 0;
+    left: 0;
     padding: 24px;
 }
 
-.logo{
-    width: 80px;
-    justify-content: flex-end;
-}
-
-header nav ul{
+header nav ul {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     list-style: none;
-    margin: -50px 0px;
+    margin: 0;
 }
 
-header nav ul li a{
+header nav ul li a {
     padding: 24px;
     text-decoration: none;
     color: #1D1E1B;
     font-size: 24px;
 }
 
-.active{
+.active {
     text-decoration: underline;
     color: #ED6C1A;
 }
 
-
-
-.homeInfo{
-    margin: 178px 178px;
+.home {
+    margin: 236px 178px;
+    padding: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-div #introducing{
+div #introducing {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    padding-right: 44px;
 }
 
-#profielfoto{
+#profielfoto {
     display: flex;
     justify-content: right;
     box-shadow: #1D1E1B;
     border-radius: 8px;
 }
 
-.space{
+.space {
     margin: 8px;
 }
-#mail{
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 800px;
+    padding-top: 178px;
+}
+
+
+
+#mail {
     width: 28px;
 }
-footer{
+
+footer {
     position: fixed;
     bottom: 0;
-    display: flex;
-    flex-direction: row;
     text-align: center;
+    margin-bottom: 24px;
 }
-.icon{
-    width:24px;
-    padding:8px;
+
+.icon {
+    width: 24px;
+    padding: 8px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
 }
