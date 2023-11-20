@@ -156,3 +156,27 @@ ul{
     display: flex;
     flex-direction: row;
 }
+
+@media screen and ( max-width: 1160px){
+
+    .home {
+        flex-direction: column;
+        justify-content:center;
+        text-align: center;
+    }
+
+    div #introducing {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 0;
+        padding-bottom: 44px;
+    }
+
+    .about{
+        text-align: center;
+        max-width: 450px;
+        padding-top: 178px;
+    }
+
+}
