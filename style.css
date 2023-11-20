@@ -147,3 +147,12 @@ footer {
    border-radius: 4px;
    padding: 8px;
 }
+
+li{
+    list-style:none;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
