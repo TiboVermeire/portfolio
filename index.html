@@ -4,35 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
+      </style>
+      <script src="./main.js"></script>
     <title>Tibo Vermeire - Home</title>
     
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <nav>
-                <a href="index.html">
-                    <img class="logo" src="Assets/empatude_logo.svg" alt="empatude-logo">
-                </a>
-                <ul>
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-            </nav>
-        </header>
-            <div class="home">
-                <div id="introducing">
-                    <h3 class="space">Hi 👋, I'm Tibo Vermeire,</h3>
-                    <h1 class="space">UX/UI Designer</h1>
-                    <h2 class="space">“No solution was ever given, <br>be creative.”</h2>
-                    <p class="space">Let's come together and delve into your ideas broadly. <br>
-                        With passion, we'll get to work designing personalized <br> solutions that answer specifically to your desires and needs.</p>
-                </div>
-                    <img id="profielfoto" src="Assets/profielfoto.jpg" alt="Photo, Tibo Vermeire" width="350px" height="240px">
+
+    <nav class="navbar">
         
-            </div>
+        <div class="logo"><a href="index.html"><img src="Assets/empatude_logo.svg" alt="empatude-logo"></a></div>
+        
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        
+        
+        <div class="navbar-links">
+            <ul>
+                <li><a class="on" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+   
+
+    <div class="home">
+        <div class="introducing">
+            <h3 class="space">Hi 👋, I'm Tibo Vermeire,</h3>
+            <h1 class="space">UX/UI Designer</h1>
+            <h2 class="space">“No solution was ever given, <br>be creative.”</h2>
+            <p class="space">Let's come together and delve into your ideas broadly. <br>
+                With passion, we'll get to work designing personalized <br> solutions that answer specifically to your desires and needs.</p>
+        </div>
+        <div class="profielfoto">
+            <img class="foto" src="Assets/profielfoto.jpg" alt="Photo, Tibo Vermeire" >
+        </div>
+            
+
+    </div>
 
         <footer>
             <div class="socials">
@@ -50,8 +70,10 @@
                 </a>
             </div>
         </footer>
-    </div>
+    
     </body>
     
 </div>
+
+
 </html>

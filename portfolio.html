@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
+      </style>
     <title>Portfolio</title>
 </head>
 
 
-<body>
-    <div class="container"> 
-   <header id="header">
-    <nav >
-        <a href="index.html">
-            <img class="logo" src="Assets/empatude_logo.svg" alt="empatude-logo">
-        </a>
-        <ul>
-            <li><a  href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a class="active" href="portfolio.html">Portfolio</a></li>
-    
-        </ul>
-    </nav>
-</header>
+<body class="body-port">
 
-<div>
+    <nav class="navbar">
+        <div class="logo"><a href="index.html"><img src="Assets/empatude_logo.svg" alt="empatude-logo"></a></div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        
+        
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a class="on" href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="portfolio">
+
         <div class="project">
             <img class="project-img" src="Assets/brandbook.png" alt="brandbook">
             <div class="project-info">
@@ -35,6 +45,7 @@
                 <a class="button" href="bandbook.html" target="_blank">View Project</a>
             </div>
         </div>
+
         <div class="project">
             <img class="project-img" src="Assets/mima.png" alt="Project_2">
             <div class="project-info">
@@ -43,6 +54,7 @@
                 <a class="button" href="https://www.google.com" target="_blank">View Project</a>
             </div>
         </div>
+
         <div class="project">
             <img class="project-img" src="Assets/homeEase.png" alt="Project_3">
             <div class="project-info">
@@ -51,6 +63,7 @@
                 <a class="button" href="https://www.google.com" target="_blank">View Project</a>
             </div>
         </div>
+
         <div class="project">
             <img class="project-img" src="Assets/ugc.png" alt="Project_4">
             <div class="project-info">
@@ -59,25 +72,26 @@
                 <a class="button" href="https://www.google.com" target="_blank">View Project</a>
             </div>
         </div>
-
-</div>
-    
-</div>
-<footer id="footer_port">
-    <div id="socials">
-        <a href="mailto:Tibo_Vermeire@icloud.com">
-            <img class="icon" id="mail" src="Assets/SVG/Mail.svg" alt="Icon_mail">
-        </a>
-        <a href="https://www.linkedin.com/in/tibo-vermeire-33b198261/" target="_blank">
-            <img class="icon" src="Assets/SVG/Linked_in.svg" alt="Icon_Linked_In">
-        </a>
-        <a href="https://www.instagram.com/empatude__/" target="_blank">
-            <img class="icon" src="Assets/SVG/Instagram.svg" alt="Icon_Instagram">
-        </a>
-        <a href="https://nl.pinterest.com/empatude__/" target="_blank">
-            <img class="icon" src="Assets/SVG/Pintrest.svg" alt="Icon_Pinterest">
-        </a>
+        
     </div>
-</footer>
+
+
+    <footer >
+        <div id="socials">
+            <a href="mailto:Tibo_Vermeire@icloud.com">
+                <img class="icon" id="mail" src="Assets/SVG/Mail.svg" alt="Icon_mail">
+            </a>
+            <a href="https://www.linkedin.com/in/tibo-vermeire-33b198261/" target="_blank">
+                <img class="icon" src="Assets/SVG/Linked_in.svg" alt="Icon_Linked_In">
+            </a>
+            <a href="https://www.instagram.com/empatude__/" target="_blank">
+                <img class="icon" src="Assets/SVG/Instagram.svg" alt="Icon_Instagram">
+            </a>
+            <a href="https://nl.pinterest.com/empatude__/" target="_blank">
+                <img class="icon" src="Assets/SVG/Pintrest.svg" alt="Icon_Pinterest">
+            </a>
+        </div>
+    </footer>
 </body>
+<script src="main.js"></script>
 </html>

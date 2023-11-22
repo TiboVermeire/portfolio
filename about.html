@@ -4,27 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
+      </style>
     <title>Tibo Vermeire - About</title>
 </head>
 
 <body>
-    <div class="container">
-    <header>
-        <nav>
-            <a href="index.html">
-                <img class="logo" src="Assets/empatude_logo.svg" alt="empatude-logo">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html"><img src="Assets/empatude_logo.svg" alt="empatude-logo"></a></div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </a>
-            <ul>
-                <li><a  href="index.html">Home</a></li>
-                <li><a class="active" href="about.html">About</a></li>
-                <li><a  href="portfolio.html">Portfolio</a></li>
-            </ul>
+            
+            
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="on" href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
         </nav>
-    </header>
 
 
         <div class="about">
-            <h1 id="title">Who I am?</h1>
+            <h1>Who I am?</h1>
             <p>
                 🚀 Unleash your creativity with me! 🚀 <br>
 
@@ -58,5 +68,5 @@
     </footer>
 </div>
 </body>
-
+<script src="./main.js"></script>
 </html>
