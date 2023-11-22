@@ -377,7 +377,7 @@ ul{
      }
 
     .socials {
-        position: fixed;
+        position: relative;
         bottom: 3rem;
     }
     
