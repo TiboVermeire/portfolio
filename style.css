@@ -38,8 +38,8 @@ h3{
 
  .navbar-links ul{
     margin: 0;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 40em;
+    padding-right: 40em;
     padding-bottom: 10px; 
     display: flex;
     flex-direction: row;
@@ -200,6 +200,16 @@ ul{
     flex-direction: row;
 }
 
+@media screen and ( max-width: 1850px){
+   
+    .navbar-links ul{
+        padding-left: 35em;
+        padding-right: 35em;
+        padding-bottom: 10px; 
+    }
+
+}
+
 @media screen and ( max-width: 1350px){
     .about{
         padding:15rem 15rem 12rem 15rem;
@@ -208,6 +218,12 @@ ul{
     .project{
         margin-left: 30%;
     }
+    .navbar-links ul{
+        padding-left: 25em;
+        padding-right: 25em;
+        padding-bottom: 10px; 
+    }
+   
 
 }
 
@@ -220,6 +236,11 @@ ul{
     }
     .project{
         margin-left: 25%;
+    }
+    .navbar-links ul{
+        padding-left: 20em;
+        padding-right: 20em;
+        padding-bottom: 10px; 
     }
 
 }
@@ -261,6 +282,7 @@ ul{
     .socials {
         position: absolute;
     }
+    
 }
 
 @media screen and ( max-width: 768px){
