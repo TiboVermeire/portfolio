@@ -5,6 +5,10 @@ body {
     font-family: 'Antic', sans-serif;
 }
 
+.blogblok{
+    padding:15rem 15rem 15rem 15rem;
+}
+
 .body-port{
     overflow: scroll;
 }
