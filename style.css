@@ -5,8 +5,12 @@ body {
     font-family: 'Antic', sans-serif;
 }
 
+.blogblok_1{
+    padding:15rem 15rem 2rem 15rem;
+}
+
 .blogblok{
-    padding:10rem 15rem 5rem 15rem;
+    padding:2rem 15rem 5rem 15rem;
 }
 
 .body-port{
