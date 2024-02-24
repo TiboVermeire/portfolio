@@ -13,6 +13,10 @@ body {
     padding:2rem 15rem 5rem 15rem;
 }
 
+.profielfotoCM{
+    height: 10rem;
+}
+
 .body-port{
     overflow: scroll;
 }
