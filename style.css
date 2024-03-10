@@ -45,7 +45,7 @@ h3{
     display: flex;
     flex-direction: row;
     position: fixed;
-    background-color: #F6EDC5;
+    background-color: red;
  }
 
  .navbar-links ul{
