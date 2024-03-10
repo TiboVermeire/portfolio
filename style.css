@@ -46,7 +46,7 @@ h3{
     flex-direction: row;
     position: fixed;
     width: 80%;
-    background-color: red;
+    background-color: #F6EDC5;
  }
 
  .navbar-links ul{
@@ -236,6 +236,10 @@ ul{
         padding-right: 25em;
         padding-bottom: 10px; 
     }
+
+    .navbar-links {
+        width: 75%;
+     }
    
 
 }
@@ -255,6 +259,10 @@ ul{
         padding-right: 20em;
         padding-bottom: 10px; 
     }
+
+    .navbar-links {
+        width: 70%;
+     }
 
 }
 
@@ -335,8 +343,7 @@ ul{
     }
 
     .navbar-links{
-        display: none;
-        width: 100%;
+        width: 0%;
         padding-top: 29rem;
     }
 
