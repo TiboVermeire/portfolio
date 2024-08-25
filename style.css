@@ -36,7 +36,7 @@ h3{
  .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: baseline;
     color: #F6EDC5;
     padding: 0px 100px 0px 100px;
  }
