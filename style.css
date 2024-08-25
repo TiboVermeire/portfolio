@@ -16,6 +16,7 @@ body {
 
 .profielfotoCM{
     height: 150px;
+    width: auto;
 }
 
 .body-port{
@@ -329,9 +330,6 @@ ul{
         display: flex;
         justify-content: center;
     }
-     .home .profielfoto .foto{
-        width:290px; height:200px;
-    }
 
     .about{
         align-items: center;
@@ -430,7 +428,7 @@ ul{
         justify-content: center;
     }
      .home .profielfoto .foto{
-        width:280px; height:180px;
+        width:280px; height:auto;
     }
 
     .about{
