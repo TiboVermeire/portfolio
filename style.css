@@ -37,78 +37,54 @@ h3{
     font-family: 'Roboto Slab', serif;
 }
 
- .navbar{
+/* General Navbar Styles */
+.navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    color: #F6EDC5;
-    padding: 0px 100px 0px 100px;
- }
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #FFF0D4;
+}
 
- .navbar-links {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    width: 80%;
-    background-color: #F6EDC5;
- }
+.logo {
+    margin-left: 1rem; /* Adjust for spacing */
+}
 
- .navbar-links ul{
-    margin: 0;
-    padding-left: 40em;
-    padding-right: 40em;
-    padding-bottom: 10px; 
-    display: flex;
-    flex-direction: row;
- }
 
- .navbar-links li{
+
+/* Navigation Links */
+.navbar-links ul {
     list-style: none;
- }
+    display: flex;
+    gap: 2rem;
+}
 
-.navbar-links li a{
+.navbar-links ul li a {
     text-decoration: none;
-    color: #1D1E1B;
-    padding: 44px 24px 0px 24px;
-    display: block;
-    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.navbar-links li a:hover {
-    color: #ED6C1A;
- }
-
- .navbar-links .on {
-    text-decoration: underline;
-    color: #ED6C1A;
+.navbar-links ul li a:hover,
+.navbar-links ul li a.on {
+    color: #ED6C1A ;
 }
 
- .logo {
-    width: 80px;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    padding: 24px;
-    background-color: #F6EDC5;
-}
-
-.toggle-button{
-    position: absolute;
-    padding-top: 32px;
-    top: .75rem;
-    right: .1rem;
+/* Toggle Button Styles */
+.toggle-button {
     display: none;
     flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    cursor: pointer;
+    z-index: 1000;
 }
 
-.toggle-button .bar{
+.toggle-button .bar {
+    width: 25px;
     height: 3px;
-    width: 100%;
-    border-radius: 20px;
-    background-color: #ED6C1A;
+    background-color: #000;
+    margin: 4px 0;
+    transition: all 0.3s ease;
 }
 
 
@@ -118,7 +94,7 @@ h3{
     flex-direction: row;
     align-items: center;
     width: 100%;
-    padding:18rem 0rem 4rem 0rem;
+    padding:10rem 0rem 4rem 0rem;
 
 }
 
@@ -397,40 +373,47 @@ ul{
         font-size: small;
     }
     
-    .toggle-button{
+    .toggle-button {
         display: flex;
+    }
+
+    .navbar-links {
         position: fixed;
-        padding-right: 24px;
-    }
-
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: #F6EDC5;
-    }
-
-    .navbar-links{
-        width: 0%;
-        padding-top: 29rem;
-    }
-
-    .navbar-links ul{ 
-        width: 100%;
-        flex-direction: column;
-        background-color: #F6EDC5;
-        align-items: center;
-    }
-
-    .navbar-links li a{
-        text-decoration: none;
-        color: #1D1E1B;
-        padding: 42px 24px 24px 24px;
-        display: block;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 250px;
         font-size: 24px;
+        background-color: #FFF0D4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease;
     }
 
-    .navbar-links.active{
-        display: flex;
+    .navbar-links ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .navbar-links.active {
+        right: 0;
+    }
+
+    /* Animated Hamburger to X */
+    .toggle-button.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .toggle-button.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle-button.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
     }
 
     .home {
