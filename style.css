@@ -137,7 +137,7 @@ h3{
     margin: 0.5rem;
 }
 
-.about{
+.content{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -212,6 +212,46 @@ ul{
     display: flex;
     flex-direction: row;
 }
+
+.content .portfolio-detail ul.images {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: space-between; 
+    margin: 20px 0; 
+}
+
+.content .portfolio-detail ul.images li {
+    margin: 0 10px; 
+    flex: 1; 
+}
+
+.content .portfolio-detail ul.images li img {
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    display: block;
+}
+
+.back-button {
+    margin: 20px;
+    display: inline-block;
+}
+
+.btn-back {
+    padding: 10px 20px;
+    background-color: #ED6C1A; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Roboto Slab', serif; 
+    font-weight: 500;
+}
+
+.btn-back:hover {
+    background-color: #ED6C1A;
+}
+
+
 
 @media screen and ( max-width: 1850px){
    
