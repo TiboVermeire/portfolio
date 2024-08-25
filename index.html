@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <link rel="preload" href="Assets/profielfoto.webp" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" as="style">
+
     <script src="https://cdn-eu.pagesense.io/js/empatude/4003f5387c204eb7a734f2715d2c9e38.js"></script>
 
     <!-- Hotjar Tracking Code -->
@@ -68,7 +72,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antic&display=swap">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Main JS -->
     <script src="./main.js" defer></script>
@@ -115,7 +119,7 @@
 
     <div class="home">
         <div class="profielfoto">
-            <img class="foto" src="Assets/profielfoto.webp" alt="Tibo Vermeire">
+            <img class="foto" src="Assets/profielfoto.webp" alt="Tibo Vermeire" loading="lazy">
         </div>
         <div class="introducing">
             <h3 class="space">Hi 👋, I'm Tibo Vermeire,</h3>
