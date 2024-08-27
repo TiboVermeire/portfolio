@@ -38,7 +38,6 @@ h3{
     font-family: 'Roboto Slab', serif;
 }
 
-/* General Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -53,7 +52,6 @@ h3{
     height: 50px;
 }
 
-/* Navigation Links */
 .navbar-links ul {
     list-style: none;
     display: flex;
@@ -72,7 +70,6 @@ h3{
     color: #ED6C1A ;
 }
 
-/* Toggle Button Styles */
 .toggle-button {
     display: none;
     flex-direction: column;
@@ -146,7 +143,7 @@ h3{
     justify-content: center;
     flex-direction: column;
     align-items: first baseline;
-    padding:15rem 15rem 15rem 15rem;
+    padding:8rem;
 
 }
 
@@ -170,42 +167,31 @@ footer {
     align-items: center;
 }
 
-.portfolio{
-    padding-top:10em;
+.portfolio {
+    padding-top: 8em;
     padding-bottom: 5rem;
+    padding-left: 2rem;  /* Adjust padding to reduce space on the left */
+    padding-right: 2rem; /* Adjust padding to reduce space on the right */
     width: 100%;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 1rem; /* Reduce space between columns and rows */
+    box-sizing: border-box; 
 }
 
-.project{
+.project {
     display: flex;
-    flex-direction: row;
-    margin-right: auto;
-    margin-left: 35%;
+    flex-direction: column;
     align-items: start;
+    flex-basis: calc(30% - 1rem); /* Slightly smaller than before to fit more items */
+    margin: 0; 
+    box-sizing: border-box; 
 }
 
-.project-img{
-    width: 178px;
-    border-radius: 8px;
-    margin: 24px;
-    color: #ED6C1A;
-    background-color: #FFF0D4;
-    border-color: #ED6C1A;
-    border-style: solid;
-    border-radius: 8px;
-}
-
-.button{
-   text-decoration: none;
-   color: #ED6C1A;
-   background-color: #FFF0D4;
-   border-color: #ED6C1A;
-   border-style: solid;
-   border-radius: 4px;
-   padding: 8px;
+.project-img {
+    width: 100%;
+    margin: 0; /* Remove margin to make images fit better within the project container */
 }
 
 li{
@@ -256,96 +242,6 @@ ul{
 }
 
 
-
-@media screen and ( max-width: 1850px){
-   
-    .navbar-links ul{
-        padding-left: 35em;
-        padding-right: 35em;
-        padding-bottom: 10px; 
-    }
-
-}
-
-@media screen and ( max-width: 1350px){
-    .about{
-        padding:15rem 15rem 12rem 15rem;
-    }
-
-    .project{
-        margin-left: 30%;
-    }
-    .navbar-links ul{
-        padding-left: 25em;
-        padding-right: 25em;
-        padding-bottom: 10px; 
-    }
-
-    .navbar-links {
-        width: 75%;
-     }
-   
-
-}
-
-
-
-@media screen and ( max-width: 1190px){
-
-    .about{
-        padding:15rem 15rem 11rem 15rem;
-    }
-    .project{
-        margin-left: 25%;
-    }
-    .navbar-links ul{
-        padding-left: 20em;
-        padding-right: 20em;
-        padding-bottom: 10px; 
-    }
-
-    .navbar-links {
-        width: 70%;
-     }
-
-}
-
-
-@media screen and ( max-width: 1160px){
-
-    body{
-        overflow: scroll;
-    }
-
-    .home {
-        flex-direction: column;
-        padding:10rem 0rem 12rem 0rem;
-    }
-    
-    .home .introducing {
-        text-align: center;
-    }
-    
-    .home .profielfoto {
-        display: flex;
-        justify-content: center;
-    }
-
-    .about{
-        align-items: center;
-        text-align: center;
-        padding:15rem 15rem 11rem 15rem;
-    }
-    
-    .project{
-        margin-left: 23%;
-    }
-    
-    .socials {
-        position: absolute;
-    }
-    
-}
 
 @media screen and ( max-width: 768px){
     body{
