@@ -170,13 +170,13 @@ footer {
 .portfolio {
     padding-top: 8em;
     padding-bottom: 5rem;
-    padding-left: 2rem;  /* Adjust padding to reduce space on the left */
-    padding-right: 2rem; /* Adjust padding to reduce space on the right */
+    padding-left: 2rem;  
+    padding-right: 2rem; 
     width: 100%;
     display: flex;
     justify-content: center; 
     flex-wrap: wrap;
-    gap: 1rem; /* Reduce space between columns and rows */
+    gap: 1rem; 
     box-sizing: border-box; 
 }
 
@@ -184,14 +184,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: start;
-    flex-basis: calc(30% - 1rem); /* Slightly smaller than before to fit more items */
+    flex-basis: calc(30% - 1rem); 
     margin: 0; 
     box-sizing: border-box; 
 }
 
 .project-img {
     width: 100%;
-    margin: 0; /* Remove margin to make images fit better within the project container */
+    margin: 0; 
 }
 
 li{
