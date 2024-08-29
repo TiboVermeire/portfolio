@@ -170,8 +170,12 @@ footer {
     align-items: center;
 }
 
+#portfolioTitle{
+    padding-left: 10rem;
+}
+
 .portfolio {
-    padding-top: 8em;
+    padding-top: 1em;
     padding-bottom: 5rem;
     padding-left: 2rem;  
     padding-right: 2rem; 
