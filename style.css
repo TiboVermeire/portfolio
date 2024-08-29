@@ -2,7 +2,7 @@ body {
     background-color: #F6EDC5;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Antic', sans-serif;
 }
 
@@ -104,7 +104,7 @@ h3{
     display: flex;
     justify-content: right;
 }
- .home .profielfoto .foto{
+.home .profielfoto .foto{
     box-shadow: #1D1E1B;
     border-radius: 8px;
     width:350px; 
@@ -145,8 +145,7 @@ h3{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: first baseline;
-    padding:8rem;
+    padding:12rem;
 
 }
 
@@ -211,73 +210,33 @@ ul{
     flex-direction: row;
 }
 
-.content .portfolio-detail ul.images {
-    list-style-type: none; 
-    display: flex; 
-    justify-content: space-between; 
-    margin: 20px 0; 
-}
-
-.content .portfolio-detail ul.images li {
-    margin: 0 10px; 
-    flex: 1; 
-}
-
-.content .portfolio-detail ul.images li img {
-    width: 100%; 
-    max-width: 250px; 
-    height: auto; 
-    display: block;
-}
-
-.back-button {
-    margin: 20px;
-    display: inline-block;
-}
-
-.btn-back {
-    padding: 10px 20px;
-    background-color: #ED6C1A; 
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-family: 'Roboto Slab', serif; 
-    font-weight: 500;
-}
-
-.btn-back:hover {
-    background-color: #ED6C1A;
-}
-
 
 
 @media screen and ( max-width: 768px){
     body{
         overflow: scroll;
-    }
-
-     .about{
-        align-items: center;
-        text-align: center;
-        padding:10rem 8rem 12rem 8rem;
-    }
-
-    .project{
-        margin-left: 15%;
-    }
-    
-
-}
-
-
-@media screen and ( max-width: 620px){
-    body{
         font-size: small;
     }
+
+    h1{
+        font-size: 32px;
+        font-family: 'Roboto Slab', serif;
+    }
     
+    h2{
+        font-size: 26px;
+        font-family: 'Roboto Slab', serif;
+    }
+    
+    h3{
+        font-size: 18px;
+        font-family: 'Roboto Slab', serif;
+    }
+
     .toggle-button {
         display: flex;
     }
+
 
     .navbar-links {
         position: fixed;
@@ -305,7 +264,6 @@ ul{
         right: 0;
     }
 
-    /* Animated Hamburger to X */
     .toggle-button.active .bar:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
@@ -317,14 +275,15 @@ ul{
     .toggle-button.active .bar:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -6px);
     }
+    
+    .home .introducing {
+        padding: 2.5em;
+        text-align: center;
+    }
 
     .home {
         flex-direction: column;
         padding:5rem 0rem 10rem 0rem;
-    }
-    
-    .home .introducing {
-        text-align: center;
     }
     
     .home .profielfoto {
@@ -334,15 +293,29 @@ ul{
      .home .profielfoto .foto{
         width:280px; height:auto;
     }
-
-    .about{
+    
+     .information{
+        margin-top: 2em;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-bottom: 5em;
+     }
+     .content{
         align-items: center;
         text-align: center;
-        padding:7rem 5rem 10rem 5rem;
+        padding: 4em;
+        padding-bottom: 16rem;
     }
 
+    #portfolioTitle{
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        padding-top:1em;
+    }
+    
     .portfolio{
-        padding-top:10em;
+        padding-top:1em;
         padding-bottom: 5rem;
         width: 100%;
         display: flex;
@@ -356,37 +329,29 @@ ul{
         text-align: center;
         flex-direction: column;
         align-items: center;
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 2em;
+        margin-left: 2em;
         padding-bottom: 2rem;
     }
 
     .project-img{
-        width: 178px;
+        width: 300px;
         margin: 0px;
-        color: #ED6C1A;
-        background-color: #FFF0D4;
-        border-color: #ED6C1A;
-        border-style: solid;
-        border-radius: 8px;
         margin-top: 3rem;
     }
-
-    .button{
-        text-decoration: none;
-        color: #ED6C1A;
-        background-color: #FFF0D4;
-        border-color: #ED6C1A;
-        border-style: solid;
-        border-radius: 8px;
-        padding: 8px;
-        align-items: center;
-        margin: 2rem;
-     }
+    
+    li{
+        list-style:none;
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
 
     .socials {
         position: relative;
         bottom: 3rem;
     }
-    
+
 }
